@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poloska Webáruház - termékrendelő</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <form id="rendeles">
+    <label for="termekNeve">Termék neve:</label>
+    <input type="text" id="termekNeve" name="termekNeve" required placeholder="Poloska"> 
+
+    <label for="fh_veznev">Vezetéknév:</label>
+    <input type="text" id="fh_veznev" name="fh_veznev" required placeholder="Mangal"> 
+
+    <label for="fh_kernev">Keresztnév:</label>
+    <input type="text" id="fh_kernev" name="fh_kernev" required placeholder="Ica"> 
+
+    <label for="fh_tszam">Telefonszám:</label>
+    <input type="tel" id="fh_tsz" name="fh_tsz" required placeholder="+36 30 123 4567"> 
+
+    <div class="nemek" style="margin-bottom: 30px;">
+        <input type="radio" id="fh_nem" name="nemek" value="Férfi" checked="checked">
+        <label for="fh_ferfi">Férfi</label><br>
+        <input type="radio" id="fh_nem" name="nemek" value="Nő">
+        <label for="fh_no">Nő</label><br>
+    </div>
+
+    <label for="mennyiseg">Mennyiség:</label>
+    <input type="number" id="mennyiseg" name="mennyiseg" required min="1" placeholder="Szám">
+
+    <input type="submit" value="Rendelés leadása">
+  </form>
+
+  <script src="/scripts/script.js"></script>
+</body>
+</html>
+
